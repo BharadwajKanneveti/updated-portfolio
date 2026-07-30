@@ -11,9 +11,10 @@ import { Docker } from "@/components/ui/svgs/docker";
 import { Javascript } from "@/components/ui/svgs/javascript";
 import { Kubernetes } from "@/components/ui/svgs/kubernetes";
 import { MongoDB } from "@/components/ui/svgs/mongodb";
-import {AWS} from "@/components/ui/svgs/aws"
+import { AWS } from "@/components/ui/svgs/aws";
 import { Java } from "@/components/ui/svgs/java";
 import { Csharp } from "@/components/ui/svgs/csharp";
+import { Rust } from "@/components/ui/svgs/rust";
 
 export const DATA = {
   name: "Bharadwaj Kanneveti",
@@ -22,9 +23,9 @@ export const DATA = {
   location: "Hyderbad, India",
   locationLink: "https://www.google.com/maps/place/hyderabad",
   description:
-    "Software Developer focused on building real things, learning openly, and solving problems that matter.",
+    "Software Developer focused on building real things, learning in public, and solving problems that matter.",
   summary:
-    "I’m currently working as a Full Stack Developer at Accenture. I enjoy shipping features end-to-end, from designing APIs to optimizing performance. I like working in fast-paced environments where I can move quickly, solve real problems, and see the impact of what I build. Outside of work, I consistently build side projects to sharpen my skills and grow as an engineer.",
+    "I previously worked as a Full Stack Developer at Accenture, building and shipping features end-to-end. I enjoy solving real problems, improving performance, and working across the stack. I’m currently open to opportunities where I can contribute, learn fast, and build meaningful products.",
   avatarUrl: "/My_Profile.jpeg",
   skills: [
     { name: "React", icon: ReactLight },
@@ -38,6 +39,7 @@ export const DATA = {
     { name: "Javascript", icon: Javascript },
     { name: "MongoDB", icon: MongoDB },
     { name: "C++", icon: Csharp },
+    {name: "Rust", icon: Rust}
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -92,8 +94,8 @@ export const DATA = {
       location: "Hyderabad",
       title: "Full Stack Developer",
       logoUrl: "/Accenture.png",
-      start: "July 2024",
-      end: "present",
+      start: "April 2024",
+      end: "Feb 2026",
       description:
         "Developed and shipped scalable full-stack applications using the MERN stack for real production use cases, including e-commerce and appointment scheduling platforms. Designed and optimized RESTful APIs with MongoDB indexing, pagination, and schema improvements to boost performance. Implemented secure JWT authentication and role-based access control to strengthen application security. Improved frontend performance using lazy loading and built business-critical features like search, referrals, and admin dashboards. Deployed and maintained applications on AWS EC2.",
     },
@@ -228,9 +230,7 @@ export const DATA = {
       active: true,
       description:
         "Built a concurrent job processing system using goroutines, channels, and worker pools to execute tasks faster and handle 10k+ jobs reliably. Added graceful shutdown and safe task coordination to ensure no job loss during high-load or termination.",
-      technologies: [
-        "Go",
-      ],
+      technologies: ["Go"],
       links: [
         // {
         //   type: "Website",
@@ -253,9 +253,7 @@ export const DATA = {
       active: true,
       description:
         "Implemented a Token Bucket rate limiter in Go to control API traffic and handle burst requests efficiently. Built thread-safe middleware for per-client IP limiting, ensuring stable performance under concurrent usage.",
-      technologies: [
-        "Go",
-      ],
+      technologies: ["Go"],
       links: [
         // {
         //   type: "Website",
@@ -300,6 +298,185 @@ export const DATA = {
     //   video:
     //     "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
     // },
+  ],
+  openSource: [
+    {
+      name: "Conduit",
+      repositoryUrl: "https://github.com/tsouth89/toolport",
+      prs: [
+        {
+          title:
+            "Add structured-result projection to toolport_fetch_result (SOU-162)",
+          url: "https://github.com/tsouth89/toolport/pull/331",
+        },
+        {
+          title: "Move secondary server actions into overflow menu",
+          url: "https://github.com/tsouth89/toolport/pull/28",
+        },
+        {
+          title: "feat: improve duplicate server UX for multi-account setups",
+          url: "https://github.com/tsouth89/toolport/pull/24",
+        },
+        {
+          title: "Add Firecrawl MCP server to curated catalog",
+          url: "https://github.com/tsouth89/toolport/pull/19",
+        },
+        {
+          title: "Add BoltAI MCP client support",
+          url: "https://github.com/tsouth89/toolport/pull/18",
+        },
+        {
+          title: "Add Continue config support for MCP servers",
+          url: "https://github.com/tsouth89/toolport/pull/49",
+        },
+        {
+          title: "add anythingllm client support",
+          url: "https://github.com/tsouth89/toolport/pull/213",
+        },
+        {
+          title: "fix: clean up server state when removing server",
+          url: "https://github.com/tsouth89/toolport/pull/509",
+        },
+        {
+          title: "fix: show tool fetch failures in profile scope panel",
+          url: "https://github.com/tsouth89/toolport/pull/468",
+        },
+        {
+          title: "fix: add warnings for invalid CONDUIT env values",
+          url: "https://github.com/tsouth89/toolport/pull/453",
+        },
+        {
+          title: "fix(clients): preserve non-string args when parsing configs",
+          url: "https://github.com/tsouth89/toolport/pull/416",
+        },
+        {
+          title: "refactor(activity): centralize timestamp formatting",
+          url: "https://github.com/tsouth89/toolport/pull/412",
+        },
+        {
+          title: "test: cover lexical and semantic blend ranking",
+          url: "https://github.com/tsouth89/toolport/pull/394",
+        },
+        {
+          title: "Clarify 'Move config in' UI copy",
+          url: "https://github.com/tsouth89/toolport/pull/355",
+        },
+        {
+          title: "Debounce ShareDialog exportConfig calls",
+          url: "https://github.com/tsouth89/toolport/pull/338",
+        },
+        {
+          title: "feat: add transport helper text in server dialog",
+          url: "https://github.com/tsouth89/toolport/pull/334",
+        },
+        {
+          title: "fix: force toaster theme to dark",
+          url: "https://github.com/tsouth89/toolport/pull/333",
+        },
+      ],
+    },
+    {
+      name: "ansvisor",
+      repositoryUrl: "https://github.com/ansvisor/ansvisor",
+      prs: [
+        {
+          title: "Refactor/centralize api config",
+          url: "https://github.com/ansvisor/ansvisor/pull/292",
+        },
+        {
+          title: "Perf/lazy load recharts",
+          url: "https://github.com/ansvisor/ansvisor/pull/281",
+        },
+        {
+          title: "feat(citations): expand source category domain lists",
+          url: "https://github.com/ansvisor/ansvisor/pull/276",
+        },
+        {
+          title: "chore(web): remove unused framer-motion dependency",
+          url: "https://github.com/ansvisor/ansvisor/pull/266",
+        },
+        {
+          title: "chore(types): remove unused deprecated Project interface",
+          url: "https://github.com/ansvisor/ansvisor/pull/258",
+        },
+        {
+          title: "fix: add aria-labels to icon-only buttons for accessibility",
+          url: "https://github.com/ansvisor/ansvisor/pull/253",
+        },
+        {
+          title: "feat: add topic creation from topics dashboard",
+          url: "https://github.com/ansvisor/ansvisor/pull/522",
+        },
+        {
+          title: "fix(web): align prompt loading spinner styles",
+          url: "https://github.com/ansvisor/ansvisor/pull/482",
+        },
+        {
+          title: "feat(web): render site audit results in agent chat",
+          url: "https://github.com/ansvisor/ansvisor/pull/386",
+        },
+      ],
+    },
+    {
+      name: "redential-cli",
+      repositoryUrl: "https://github.com/Redential/redential-cli",
+      prs: [
+        {
+          title: "Add signed commit guidance and documentation",
+          url: "https://github.com/Redential/redential-cli/pull/50",
+        },
+        {
+          title: "fix: detect package.json dependencies for Tier1 matches",
+          url: "https://github.com/Redential/redential-cli/pull/48",
+        },
+        {
+          title: "fix: improve EOF errors for submit prompts",
+          url: "https://github.com/Redential/redential-cli/pull/45",
+        },
+        {
+          title: "fix: add missing package map entries for wrangler and prisma",
+          url: "https://github.com/Redential/redential-cli/pull/43",
+        },
+        {
+          title: "fix: improve guidance for non-interactive prompt errors",
+          url: "https://github.com/Redential/redential-cli/pull/41",
+        },
+        {
+          title: "fix: correct singular commit wording in identity prompt",
+          url: "https://github.com/Redential/redential-cli/pull/36",
+        },
+      ],
+    },
+    {
+      name: "CraftBot",
+      repositoryUrl: "https://github.com/CraftOS-dev/CraftBot",
+      prs: [
+        {
+          title: "fix: surface living ui persistence failures",
+          url: "https://github.com/CraftOS-dev/CraftBot/pull/378",
+        },
+      ],
+    },
+    {
+      name: "OpenUI",
+      repositoryUrl: "https://github.com/thesysdev/openui",
+      prs: [
+        {
+          title: "Add OpenUI Lang comparison matrix to README",
+          url: "https://github.com/thesysdev/openui/pull/548",
+        },
+      ],
+    },
+    {
+      name: "DecisionBox",
+      repositoryUrl: "https://github.com/decisionbox-io/decisionbox-platform",
+      prs: [
+        {
+          title: "docs: improve inline code comments in orchestrator.go",
+          url: "https://github.com/decisionbox-io/decisionbox-platform/pull/259",
+        },
+      ],
+    },
   ],
   // hackathons: [
   //   // {
