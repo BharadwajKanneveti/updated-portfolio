@@ -39,7 +39,7 @@ export const DATA = {
     { name: "Javascript", icon: Javascript },
     { name: "MongoDB", icon: MongoDB },
     { name: "C++", icon: Csharp },
-    {name: "Rust", icon: Rust}
+    { name: "Rust", icon: Rust },
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -301,37 +301,157 @@ export const DATA = {
   ],
   openSource: [
     {
+      name: "ansvisor",
+      repositoryUrl: "https://github.com/ansvisor/ansvisor",
+      prs: [
+        {
+          title: "fix(citations): keep content visible during refetch",
+          url: "https://github.com/ansvisor/ansvisor/pull/775",
+        },
+        {
+          title:
+            "fix(citations): replace source filters with client-side scope",
+          url: "https://github.com/ansvisor/ansvisor/pull/742",
+        },
+        {
+          title: "fix: calculate content metrics across all opportunities",
+          url: "https://github.com/ansvisor/ansvisor/pull/700",
+        },
+        {
+          title: "fix(web): prevent stale responses from overwriting results",
+          url: "https://github.com/ansvisor/ansvisor/pull/682",
+        },
+        {
+          title: "fix: content search pagination",
+          url: "https://github.com/ansvisor/ansvisor/pull/681",
+        },
+        {
+          title: "fix: improve content list accessibility and i18n",
+          url: "https://github.com/ansvisor/ansvisor/pull/679",
+        },
+        {
+          title:
+            "fix: show persistent error state on audit detail load failure",
+          url: "https://github.com/ansvisor/ansvisor/pull/678",
+        },
+        {
+          title: "fix: prevent duplicate audit reruns",
+          url: "https://github.com/ansvisor/ansvisor/pull/677",
+        },
+        {
+          title: "fix: group audit trend points by local date",
+          url: "https://github.com/ansvisor/ansvisor/pull/675",
+        },
+        {
+          title: "fix: refresh audit stats after deleting audit",
+          url: "https://github.com/ansvisor/ansvisor/pull/674",
+        },
+        {
+          title: "fix: localize audit hub and report strings",
+          url: "https://github.com/ansvisor/ansvisor/pull/673",
+        },
+        {
+          title: "fix: improve audit page accessibility attributes",
+          url: "https://github.com/ansvisor/ansvisor/pull/672",
+        },
+        {
+          title: "fix: surface agent action errors to users",
+          url: "https://github.com/ansvisor/ansvisor/pull/646",
+        },
+        {
+          title: "fix: return validation errors from prompt workflow actions",
+          url: "https://github.com/ansvisor/ansvisor/pull/645",
+        },
+        {
+          title: "fix: handle audit polling timeout state",
+          url: "https://github.com/ansvisor/ansvisor/pull/632",
+        },
+        {
+          title: "fix: handle prompt detail fetch errors",
+          url: "https://github.com/ansvisor/ansvisor/pull/627",
+        },
+        {
+          title: "fix: map prompt topic ID from database rows",
+          url: "https://github.com/ansvisor/ansvisor/pull/626",
+        },
+        {
+          title: "refactor: remove unused insights chart components",
+          url: "https://github.com/ansvisor/ansvisor/pull/625",
+        },
+        {
+          title: "Fix traffic chart date labels across timezones",
+          url: "https://github.com/ansvisor/ansvisor/pull/621",
+        },
+        {
+          title: "feat: trigger prompt volume analysis after checkout",
+          url: "https://github.com/ansvisor/ansvisor/pull/582",
+        },
+        {
+          title: "fix: increase agent max output tokens",
+          url: "https://github.com/ansvisor/ansvisor/pull/563",
+        },
+        {
+          title: "feat: add topic creation from topics dashboard",
+          url: "https://github.com/ansvisor/ansvisor/pull/522",
+        },
+        {
+          title: "fix(web): align prompt loading spinner styles",
+          url: "https://github.com/ansvisor/ansvisor/pull/482",
+        },
+        {
+          title: "feat(web): render site audit results in agent chat",
+          url: "https://github.com/ansvisor/ansvisor/pull/386",
+        },
+        {
+          title: "Refactor/centralize api config",
+          url: "https://github.com/ansvisor/ansvisor/pull/292",
+        },
+        {
+          title: "Perf/lazy load recharts",
+          url: "https://github.com/ansvisor/ansvisor/pull/281",
+        },
+        {
+          title: "feat(citations): expand source category domain lists",
+          url: "https://github.com/ansvisor/ansvisor/pull/276",
+        },
+        {
+          title: "chore(web): remove unused framer-motion dependency",
+          url: "https://github.com/ansvisor/ansvisor/pull/266",
+        },
+        {
+          title: "chore(types): remove unused deprecated Project interface",
+          url: "https://github.com/ansvisor/ansvisor/pull/258",
+        },
+        {
+          title: "fix: add aria-labels to icon-only buttons for accessibility",
+          url: "https://github.com/ansvisor/ansvisor/pull/253",
+        },
+      ],
+    },
+
+    {
       name: "Conduit",
       repositoryUrl: "https://github.com/tsouth89/toolport",
       prs: [
         {
-          title:
-            "Add structured-result projection to toolport_fetch_result (SOU-162)",
-          url: "https://github.com/tsouth89/toolport/pull/331",
+          title: "refactor: reuse shared cost estimation",
+          url: "https://github.com/tsouth89/toolport/pull/575",
         },
         {
-          title: "Move secondary server actions into overflow menu",
-          url: "https://github.com/tsouth89/toolport/pull/28",
+          title: "refactor: reuse shared civil date conversion",
+          url: "https://github.com/tsouth89/toolport/pull/574",
         },
         {
-          title: "feat: improve duplicate server UX for multi-account setups",
-          url: "https://github.com/tsouth89/toolport/pull/24",
+          title: "fix: skip corrupt lines before applying inspect limit",
+          url: "https://github.com/tsouth89/toolport/pull/573",
         },
         {
-          title: "Add Firecrawl MCP server to curated catalog",
-          url: "https://github.com/tsouth89/toolport/pull/19",
+          title: "fix: prevent cross-server rate limit matches",
+          url: "https://github.com/tsouth89/toolport/pull/572",
         },
         {
-          title: "Add BoltAI MCP client support",
-          url: "https://github.com/tsouth89/toolport/pull/18",
-        },
-        {
-          title: "Add Continue config support for MCP servers",
-          url: "https://github.com/tsouth89/toolport/pull/49",
-        },
-        {
-          title: "add anythingllm client support",
-          url: "https://github.com/tsouth89/toolport/pull/213",
+          title: "fix: avoid placeholder false positives for keyword params",
+          url: "https://github.com/tsouth89/toolport/pull/567",
         },
         {
           title: "fix: clean up server state when removing server",
@@ -373,54 +493,60 @@ export const DATA = {
           title: "fix: force toaster theme to dark",
           url: "https://github.com/tsouth89/toolport/pull/333",
         },
-      ],
-    },
-    {
-      name: "ansvisor",
-      repositoryUrl: "https://github.com/ansvisor/ansvisor",
-      prs: [
         {
-          title: "Refactor/centralize api config",
-          url: "https://github.com/ansvisor/ansvisor/pull/292",
+          title:
+            "Add structured-result projection to toolport_fetch_result (SOU-162)",
+          url: "https://github.com/tsouth89/toolport/pull/331",
         },
         {
-          title: "Perf/lazy load recharts",
-          url: "https://github.com/ansvisor/ansvisor/pull/281",
+          title: "add anythingllm client support",
+          url: "https://github.com/tsouth89/toolport/pull/213",
         },
         {
-          title: "feat(citations): expand source category domain lists",
-          url: "https://github.com/ansvisor/ansvisor/pull/276",
+          title: "Move secondary server actions into overflow menu",
+          url: "https://github.com/tsouth89/toolport/pull/28",
         },
         {
-          title: "chore(web): remove unused framer-motion dependency",
-          url: "https://github.com/ansvisor/ansvisor/pull/266",
+          title: "feat: improve duplicate server UX for multi-account setups",
+          url: "https://github.com/tsouth89/toolport/pull/24",
         },
         {
-          title: "chore(types): remove unused deprecated Project interface",
-          url: "https://github.com/ansvisor/ansvisor/pull/258",
+          title: "Add Firecrawl MCP server to curated catalog",
+          url: "https://github.com/tsouth89/toolport/pull/19",
         },
         {
-          title: "fix: add aria-labels to icon-only buttons for accessibility",
-          url: "https://github.com/ansvisor/ansvisor/pull/253",
+          title: "Add BoltAI MCP client support",
+          url: "https://github.com/tsouth89/toolport/pull/18",
         },
         {
-          title: "feat: add topic creation from topics dashboard",
-          url: "https://github.com/ansvisor/ansvisor/pull/522",
-        },
-        {
-          title: "fix(web): align prompt loading spinner styles",
-          url: "https://github.com/ansvisor/ansvisor/pull/482",
-        },
-        {
-          title: "feat(web): render site audit results in agent chat",
-          url: "https://github.com/ansvisor/ansvisor/pull/386",
+          title: "Add Continue config support for MCP servers",
+          url: "https://github.com/tsouth89/toolport/pull/49",
         },
       ],
     },
+
     {
       name: "redential-cli",
       repositoryUrl: "https://github.com/Redential/redential-cli",
       prs: [
+        {
+          title: "test: add signature near-miss fixtures",
+          url: "https://github.com/Redential/redential-cli/pull/82",
+        },
+        {
+          title:
+            "fix: detect manifest dependencies added inside existing blocks",
+          url: "https://github.com/Redential/redential-cli/pull/67",
+        },
+        {
+          title:
+            "refactor: extract CLI program construction for version testing",
+          url: "https://github.com/Redential/redential-cli/pull/56",
+        },
+        {
+          title: "Document global install conflict for alias packages",
+          url: "https://github.com/Redential/redential-cli/pull/51",
+        },
         {
           title: "Add signed commit guidance and documentation",
           url: "https://github.com/Redential/redential-cli/pull/50",
@@ -457,6 +583,7 @@ export const DATA = {
         },
       ],
     },
+
     {
       name: "OpenUI",
       repositoryUrl: "https://github.com/thesysdev/openui",
@@ -467,6 +594,7 @@ export const DATA = {
         },
       ],
     },
+
     {
       name: "DecisionBox",
       repositoryUrl: "https://github.com/decisionbox-io/decisionbox-platform",
